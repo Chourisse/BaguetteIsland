@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #F5F5F5;
+	font-family: 'PT Sans', sans-serif;
+	scroll-behavior: smooth;
+}
+form{
+	margin-top: 0px;
+	padding: 40px 60px;
+	border-radius: 10px;
+	min-width: 300px;
+}
+form h1{
+	color: #66BB6A;
+	text-align: center;
+	}
+form h2{
+	text-align: left;
+	margin-left: -350px;
+}
+form h4{
+	text-align: left;
+	margin-left: -400px;
+
+}
