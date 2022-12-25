@@ -7,26 +7,31 @@ body{
 	font-family: 'PT Sans', sans-serif;
 	scroll-behavior: smooth;
 }
+
 form{
 	margin-top: 0px;
 	padding: 40px 60px;
 	border-radius: 10px;
 	min-width: 300px;
 }
+
 form h1{
 	color: #66BB6A;
 	text-align: center;
 	}
+
 form h2{
 	text-align: left;
 	margin-left: -450px;
 text-decoration: underline;
 text-decoration-color: #66BB6A;
 }
+
 form h4{
 	text-align: left;
 	margin-left: -500px;
 }
+
 form button{
 		margin-bottom: 0px;
 		padding: 1px 5px;
@@ -40,6 +45,7 @@ form button{
 		top: 238px;
 		left: 275px;
 	}
+
 	div {
   text-align: center;
 }
