@@ -26,11 +26,10 @@ text-decoration-color: #66BB6A;
 form h4{
 	text-align: left;
 	margin-left: -500px;
-    
 }
 form button{
 		margin-bottom: 0px;
-		padding: 3px 7px;
+		padding: 2px 6px;
 		border: none;
 		border-radius: 5px;
 		outline-color: #lightgrey;
@@ -39,5 +38,8 @@ form button{
 		cursor: pointer;
 		position: absolute;
 		top:183px;
-		left: 185px;
+		left: 275px;
 	}
+	div {
+  text-align: center;
+}
