@@ -29,7 +29,7 @@ form h4{
 }
 form button{
 		margin-bottom: 0px;
-		padding: 2px 6px;
+		padding: 1px 5px;
 		border: none;
 		border-radius: 5px;
 		outline-color: #lightgrey;
@@ -37,7 +37,7 @@ form button{
 		background-color: #66BB6A;
 		cursor: pointer;
 		position: absolute;
-		top:183px;
+		top: 238px;
 		left: 275px;
 	}
 	div {
