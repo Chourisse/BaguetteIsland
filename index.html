@@ -1,57 +1,235 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Baguette Island</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.js">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
 </head>
 <body>
-	<form>
-		<h1>Baguette Island</h1>
-		<div> <class="social-media">
-			<p>
-				<i class="fa-solid fa-globe"></i>
-			</p>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> 
+	
+	<!-- Navbar -->
+	<div class="topnav" id="myTopnav">
+		<div class="max-width">
+			  <a href="#head">Home</a>
+			  <a href="#about">A propos</a>
+			  <a href="#gamemodes">Survie</a>
+			  <a href="#vote">Vote</a>
+			  <a href="#staff">Staff</a>
+		  	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		</div>
-		<p>
-			<h2>Joueurs</h2>
-			<h4>Chouris<br>AlxMC16<br>Xinersay<br>Maxtim007<br>Ilymomy (Raph)<br>ObstacleYeti703</h4>
-		</p>
-			<button type="button" onclick="toggle_text('span_txt2');">+</button>
-			<br>
-<span id="span_txt2" style="display:none;">
-	<div>
-blabla
-</div>
-<img src="https://visage.surgeplay.com/face/512/afce411fe76646ae89563bc1ddb779d1" width="64" height="64"/>
-	<img src="https://visage.surgeplay.com/face/512/ba7e9144ff20445880bfe684fc78857e" width="64" height="64"/>
-	<img src="https://visage.surgeplay.com/face/512/d5443e4951d24b3eadb2a3fa97cc5be0" width="64" height="64"/>
-	<br>
-	<img src="https://visage.surgeplay.com/face/512/6ccd1a58bd354551a95b9fa729bc2ad3" width="64" height="64"/>
-	<img src="https://visage.surgeplay.com/face/512/9755efbb541940ba8ca4fbb03db13609" width="64" height="64"/>
-	<img src="https://visage.surgeplay.com/face/512/d5443e4951d24b3eadb2a3fa97cc5be0" width="64" height="64"/>
-</span>
-<script type="text/javascript">
-function toggle_text(id) {
-  var span = document.getElementById(id);
-  if(span.style.display == "none") {
-    span.style.display = "inline";
-  }
-  else {
-    span.style.display = "none";
-  }
-}
-</script>
-<br>
-<h3>Informations</h3>
-<h4>Ressource pack : Vanilla tweaks + fresh animations
-	<br>
-Version : 1.19.2 (1.13 - 1.19.3)
-<br>
-Tu joue sur java ? Contact Cédric sur discord ;)
-<br>
-Qui heberge le server ? MineStrator, grace à AlxMC16 qui paye le server ❤
-</h4>
+	</div>
+
+	<header id="head" class="parallax">
+		<h1>Baguette Island</h1>
+		<h3>baguetteisland.mine.fun<br>188.165.59.60<br>30950</h3>
+	</header>
+
+	<section id="about">
+		<h1>Le serveur</h1>
+		<hr>
+		<div class="row features">
+			<div class="col">
+				<i class="fab fa-cloudscale feature"></i>
+				<h2>Nous sommes rapides, comme sonic</h2>
+				<p>Nos serveurs sont si rapides, que même sonic ne peut pas suivre, incroyable non ?!</p>
+			</div>
+			<div class="col">
+				<i class="fas fa-users feature"></i>
+				<h2>Entraide</h2>
+				<p>Il y aura toujours des gens pour vous aidez sur le serveur pour finaliser vos objectifs !</p>
+			</div>
+			<div class="col">
+				<i class="fas fa-shield-alt feature"></i>
+				<h2>Toujours ouvert</h2>
+				<p>Le serveur a 99.2% d'uptime, vous pouvez donc jouez quand vous le voulez !</p>
+			</div>
+		</div>
+
+		<div class="row features">
+			<div class="col">
+				<i class="far fa-calendar-alt feature"></i>
+				<h2>Events incroyables</h2>
+				<p>Nous avons créer des événements super amusants pour vous et les autres joueurs !</p>
+			</div>
+			<div class="col">
+				<i class="fas fa-code-branch feature"></i>
+				<h2>Plugins incroyables</h2>
+				<p>Nous avons créé des plugins personnalisés pour notre serveur, ils sont incroyables !</p>
+			</div>
+			<div class="col">
+				<i class="fas fa-fighter-jet feature"></i>
+				<h2>Jet de chasse</h2>
+				<p>Ce n’est pas une fonctionnalité mais peut être un jour, non c’est juste un remplissage mdr</p>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="banner" class="parallax">
+		<h1>QU’EST-CE QUE T’ATTENDS ?</h1>
+		<h2>REJOIGNEZ NOTRE SERVEUR DÈS MAINTENANT À <br><i>BAGUETTEISLAND.MINE.FUN / 188.165.59.60 30950</i></h2>
+	</section>
+
+	<section id="gamemodes">
+		<h1>Survie</h1>
+		<p>News</p>
+		<hr>
+		<div class="row fixed-width">
+			<div class="col-md mode">
+				<h2>farm à gold par Chouris</h2>
+				<p>Il vous suffit de vous mettre tout en haut de la construction sur la petite platforme de verre et à AFK pour gagner de l'or !
+				Pour cela il suffit d'utiliser le TGV du serveur, et de monter sur le toit du nether, par la suite utiliser vos elytres pour monter en haut !</p>
+			</div>
+			<div class="col-md img">
+				<img class="res-img" src="https://i.imgur.com/AcvggdY.jpg">
+			</div>
+		</div>
+		<section class="gray">
+			<div class="row fixed-width">
+					<div class="col-md img">
+						<img class="res-img" src="https://i.imgur.com/wOJanTl.jpg">
+					</div>
+				<div class="col-md mode">
+					<h2>Farm à endermans par AlxMC16</h2>
+					<p>AlxMC16 à créer une farm à endermans dans l'end ultra puissante qui est capable de beaucoup de choses ! Attention pour l'utiliser il faut que tout les joueurs qui se trouvent dans l'end sois dans la farm, sinon elle ne marchera plus le temps de l'utilisation. Pour y acceder vous pouvez suivre le pont à la droite du spawn de l'end !</p>
+				</div>
+			</div>
+		</section>
+		<div class="row fixed-width">
+			<div class="col-md mode">
+				<h2>Farm à creepers par Maxtim007</h2>
+				<p>Maxtim007 nous à fait une farm à creepers, pour avoir des gunpowders et pouvoir se faire des fireworks rapidement. Pour y aller il vous suffit de monter tout en haut via les échelles, la farm se trouve en -17003 -21032 ! (Utiliser le TGV pour y acceder plus rapidement, vous serrez tp à la maison de Chouris et Maxtim007 qui est à coté de la farm)</p>
+			</div>
+			<div class="col-md img">
+				<img class="res-img" src="https://i.imgur.com/KWipszU.png">
+			</div>
+		</div>
+	</section>
+
+	<section id="banner2" class="parallax">
+		<h1>Regardez la bluemap dès maintenant !</h1>
+		<h2>Texte cliquable : <i><a href="http://188.165.59.60:30952/">Bluemap</a></i></h2>
+	</section>
+
+	<section id="vote">
+		<h1>VOTER POUR LE SERVEUR</h1>
+		<p>Vote pour soutenir le serveur !</p>
+		<hr>
+		<div class="row votelist">
+			<div class="col-md voteblock">
+				<img class="res-img-sm" src="https://www.planetminecraft.com/images/layout/planetminecraft_logo.png">
+				<h2>PlanetMinecraft</h2>
+				<a href="https://www.planetminecraft.com/server/baguette-island/vote/">Vote now</a>
+			</div>
+
+	</section>
+
+	<section id="banner3" class="parallax">
+		<h1>Une question ?</h1>
+		<h2>Contacter nous sur le <i><a href="https://discord.gg/eGZrHqjcgh">discord</a></i></h2>
+	</section>
+
+	<section id="staff">
+		<h1>Le staff</h1>
+		<hr>
+		<div class="row stafflist">
+			<div class="col-md staffblock">
+				<img width="100px;" src="	https://visage.surgeplay.com/face/512/afce411fe76646ae89563bc1ddb779d1">
+				<h2>Chouris</h2>
+				<p>Owner</p>
+			</div>
+
+			<div class="col-md staffblock">
+				<img width="100px;" src="	https://visage.surgeplay.com/face/512/ba7e9144ff20445880bfe684fc78857e">
+				<h2>AlxMC16</h2>
+				<p>Co-Owner</p>
+			</div>
+
+			<div class="col-md staffblock">
+				<img width="100px;" src="	https://visage.surgeplay.com/face/512/6ccd1a58bd354551a95b9fa729bc2ad3">
+				<h2>Maxtim007</h2>
+				<p>Admin</p>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer">
+			<div class="copyright-notice">
+				<!-- If you want to, you're allowed to delete these credits. But if you want to support my work, please leave it. -->
+				<p>Made with <font color="red">❤</font> by Chouris</font></p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 100, function(){
+		   
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
+
+	<script>
+		function myFunction() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+	</script>
+
+	<script>
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        document.getElementById("myBtn").style.display = "block";
+	    } else {
+	        document.getElementById("myBtn").style.display = "none";
+	    }
+	}
+
+	function topFunction() {
+	    document.body.scrollTop = 0;
+	    document.documentElement.scrollTop = 0;
+	}
+	</script>
+
 </body>
 </html>
